@@ -76,6 +76,25 @@ input {
 .content {
     grid-column: 2;
     background-color: #f4f4f5;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-panel {
+    grid-column: 1;
+    transform: translate(25px, 25px);
+    width: 800px;
+    height: 500px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main-item {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
 .header-grid {
@@ -109,3 +128,58 @@ input {
     grid-template-rows: repeat(3, 1fr);
     transform: translate(0, 150px);
 }
+
+#content-title {
+    transform: translate(10px, 10px);
+}
+
+.title {
+    transform: translate(10px, 0);
+}
+
+.text {
+    transform: translate(10px, 20px);
+}
+
+.side-panel {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+    font-size: small;
+}
+
+.announcements {
+    border: 2px solid black;
+    border-radius: 5px;
+    transform: translate(-20px, -20px);
+}
+
+.announcement-title {
+    text-align: center;
+}
+
+.announcement-text {
+    text-align: center;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    transform: translate(-20px, 0);
+}
+
+.trending {
+    transform: translate(60px, 0);
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.trending-title, .trending-text {
+    text-align: center;
+}
+
